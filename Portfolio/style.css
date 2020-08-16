@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  background-color: black;
+  line-height: 1.5;
+  font-family: "Noto Serif", serif;
+  color: antiquewhite;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}

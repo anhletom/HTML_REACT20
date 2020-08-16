@@ -1,0 +1,23 @@
+body {
+  background-color: #0a122a;
+  color: pink;
+  font-family: "Noto Serif", serif;
+}
+
+header {
+  background-color: #0b2161;
+}
+
+header ul li a {
+  color: pink;
+  text-decoration: none;
+  background-color: teal;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+}
