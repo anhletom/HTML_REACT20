@@ -12,11 +12,20 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 50px;
 }
 
 p {
     line-height: 1.5;
     margin: 12px 0;
+}
+
+input, textarea {
+    padding: 8px;
+    font-family: "Lato", "sans-serif";
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #333;
 }
 /* Header */
 
@@ -86,7 +95,82 @@ header nav ul li a:hover {
     display: inline-block;
 }
 
+/* About us */
+
+#about {
+    background-color: white;
+    min-height: 65vh;
+}
 
 
+#about .texts {
+    float: left;
+    width: 40%;
+}
 
+#about img {
+    float: right;
+    width: 40%;
+    border-radius: 5px;
+}
 
+.clearfix {
+    clear: both;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    height: 130vh;
+} 
+
+footer form {
+    float: left;
+    width: 40%;
+}
+
+footer .right {
+    float: right;
+    width: 40%;
+}
+
+/*Form */
+
+footer form label {
+    width: 150px;
+    display: inline-block;
+}
+
+footer form .form-group {
+    margin: 16px 0;
+}
+
+footer form h3 {
+    border-top: 1px dotted grey;
+    padding-top: 18px;
+    margin-top: 18;
+}
+
+footer form input{
+    width: 57%;
+}
+
+footer form input[type="radio"],  footer form input[type="checkbox"]{
+    margin:0 20px;
+}
+
+footer form textarea{
+    margin-left: 20px;
+    display: block;
+    width: 95%;
+}
+
+footer form button {
+    background-color: tomato;
+    color: white;
+    padding: 12px 24px;
+    margin: 24px 24px 24px 20px;
+    text-transform: uppercase;
+
+}
