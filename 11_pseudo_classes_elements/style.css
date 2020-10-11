@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", serif;
+}
+
+/* Header */
+
+header {
+    background-color: #333;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    align-items: center;
+    padding: 1rem;
+}
+
+main {
+    margin-top: 70px;
+}
+
+footer{
+    background-color: #333; 
+    /*position: fixed;
+    bottom: 0;*/
+}
+
+/* Navigation */
+li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;   
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+    text-transform: uppercase;   
+}
+
+a:visited {
+    color: blanchedalmond;
+    text-decoration: underline;
+    text-transform: uppercase;   
+}
+
+i {
+    padding: 5px;
+    color: pink;
+}
+
+/* Section Paragraph */
+.text-content p {
+    padding: 1rem;
+    color: white;
+    background-color: lightblue;
+    margin: 1rem;
+}
+
+/* .text-content p:first-child {
+    color: black;
+    background-color: cyan;
+}
+
+
+.text-content p:last-child {
+    color: black;
+} */
+
+/* .text-content p:nth-child(2) {
+    color: green;
+    background-color: lightgoldenrodyellow;
+} */
+
+.text-content p:nth-child(even) {
+    color: green;
+    background-color: honeydew;
+} 
+
+/*.text-content p:nth-child(odd) {
+    color: blue;
+    background-color: rgb(241, 148, 179);
+}*/
+
+/* .text-content p:nth-child(2n + 6) {
+    color: peru;
+    background-color: honeydew;
+}
+
+.text-content p:nth-child(2) {
+    color: peru;
+    background-color: honeydew;
+    position: relative:
+    top: 75px;
+    left:75px;
+}*/
+
+.text-content p:nth-child(2) {
+    color: green;
+    background-color: pink;
+    position: relative;
+    top: 50px;
+    left: 75px;
+}
+
+.text-content {
+    position: relative;
+}
+
+.text-content p:nth-child(3) {
+    color: blueviolet;
+    background-color: wheat;
+    position: absolute;
+    bottom: 0;
+}
+
+.text-content p:nth-child(4) {
+    position: sticky;
+    top: 150px;
+    background-color: tomato;
+}
+
+/*Hero banner */
+section {
+    position: relative;
+    height: 80vh;
+    background: url("https://source.unsplash.com/1600x900/?laptop") no-repeat fixed center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(6, 36, 6);
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+
