@@ -1,0 +1,89 @@
+:root {
+    --light-color: lightblue;
+    --dark-color: #333;
+    --highlight-color: tomato;
+    --font: "Noto Serif", serif;
+}
+
+body{
+    background-image: linear-gradient(/*to right bottom*/ -90deg,burlywood,blueviolet, blue);
+    font-family: var(--font);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.card {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    background: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--dark-color);
+    transition: all 2s 0s;
+}
+
+.card:hover{
+    transform: perspective(400px) rotateY(45deg);
+}
+
+.circle {
+    background-image: radial-gradient(/*to right bottom*/ burlywood 5%,blueviolet 15%, blue);
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    /*background: var(--light-color);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--dark-color);
+    transition: all 2s;
+    text-align: center;
+    animation: example 2s infinite;
+    position: relative;
+}
+
+/*@keyframes example{
+    from {
+        background:var(--light-color);
+    }
+    to {
+        background: var(--highlight-color);
+        height: 200px;
+        width: 200px;
+        box-shadow: 10px 10px 20px black;
+    }
+}*/
+
+/*@keyframes example{
+    0% {
+        top:0;
+        left:0;
+        background: brown;
+    }
+    25% {
+        top: 0;
+        left: 200px;
+        background: pink;
+    }
+    50% {
+        top: 200px;
+        left: 200px;
+        background: yellow;
+    }
+    75% {
+        top: 200px;
+        left: 0;
+        background: violet;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background: brown;
+    }
+}*/
+

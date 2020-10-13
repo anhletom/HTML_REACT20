@@ -1,0 +1,71 @@
+:root {
+    --background: lightblue;
+    --primary-color: orange;
+    --secondary-color: chocolate;
+    --light-color: #f4f4f4;
+    --dark-color: #333;
+    --font: "Raleway", sans-serif;
+}
+
+body{
+    background-color: var(--background);
+    font-family: var(--font);
+    color: var(--dark-color)
+}
+
+h1 {
+    text-shadow: 5px 5px 5px var(--dark-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.item {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    min-height: 200px;
+    border-radius: 5px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color);
+    transition: background-color 1s;
+}
+
+.item:hover {
+    background-color: var(--secondary-color);
+}
+
+.item:nth-child(even) {
+    text-shadow: 0 0 5px var(--dark-color);
+    box-shadow: 0 0 5px var(--dark-color);
+}
+
+.item:nth-child(odd) {
+    text-shadow: 0 0 5px var(--secondary-color);
+    box-shadow: -5 -5 5px var(--secondary-color);
+}
+
+.circle {
+    background-color: var(--light-color);
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px var(--dark-color);
+    transition: all 2s ease-out 5s;
+}
+
+.circle:hover {
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 100px;
+    color: var(--light-color);
+}
