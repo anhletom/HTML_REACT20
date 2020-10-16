@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+  }
+
+.container {
+    max-width: 1200px;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 2px;
+    min-height: 25vh;
+    margin: 0 auto;
+  }
+
+  a {
+      text-decoration: none;
+      color: pink;
+  }
+
+  input, textarea, button {
+      font-family: "Noto Serif", serif;
+  }
+
+  h1, h2, h3 {
+      margin-bottom: 2rem;
+  }
+
+  p {
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+  }
+
+  img {
+    margin-right: 2rem;
+  }
+/* Header area */
+header {
+    background-color: #333;
+    padding: 1.5rem;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo a {
+    color: pink;
+    font-size: 2rem;
+}
+
+/* Main navigation */
+
+header nav ul {
+    list-style-type: none;
+    position: relative;
+  }
+
+header nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+header nav ul li ul li {
+    display: block;
+}
+
+header nav ul li ul li a {
+    display: block;
+    padding: 0.5rem;
+}
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  header nav ul li a {
+    color: white;
+    padding: 0.5rem 0;
+    margin: 0 1rem;
+    display: block;
+    border-bottom: 3px double transparent;
+  }
+  
+  header nav ul li a:hover {
+    border-bottom: 3px double pink;
+  }
+
+  /* Hero Banner */
+main #hero-banner {
+  background: url("https://source.unsplash.com/1600x900/?girl, computer") no-repeat fixed
+    center center/cover;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+main #hero-banner::before {
+    position: absolute;
+    content: "";
+    height: 85%;
+    width: 100%;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+
+main #hero-banner h1 {
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  margin: 100px;
+  z-index: 1;
+}
+
+main #hero-banner span {
+  color: pink;
+}
+
+
+nav ul li a .dropdown:hover .galary{
+    display: initial;
+}
+
+.galary a {
+    color: white;
+}
+/* Work section */
+
+main #work .work_boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #work .box {
+    background-color: white;
+    width: 32%;
+    padding: 1rem ;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #333;
+}
+
+main #work .box:hover {
+    box-shadow: 0 0 25px #333;
+}
+
+main #work .box img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main #work .box a:hover {
+    color: rgb(236, 120, 139);
+}
+
+/* Experience section */
+
+main #experience {
+    display: flex;
+    background-color: white;
+}
+
+main #experience img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main #experience content {
+    padding: 3rem;
+}
+
+/* Skills section */
+
+main #skills {
+    background: url("https://source.unsplash.com/1600x900/?girl, computer") no-repeat fixed
+    center center/cover;
+    padding: 3rem;
+}
+
+main #skills .container {
+    background-color: whitesmoke;
+    height: 30rem;
+}
+
+main #skills .skills_boxes {
+    display: flex;
+    justify-content: space-between;
+}
+main #skills .box {
+        background-color: white;
+        padding: 4rem ;
+        border-radius: 2px;
+        box-shadow: 0 0 2px #333;
+        width:30%;
+        margin: 2px;
+        text-align: center;
+        position: relative;
+    }
+    main #skills .box:nth-child(odd) {
+        background-color: rgba(145, 137, 137, 0);
+    }
+
+    i {
+        text-align: center;
+        padding-bottom: 1rem;
+        color: rgba(51, 51, 51, 0.788);
+    }
+
+    .level {
+        background-color: rgba(182, 172, 172, 0.109);
+        padding: 1rem;
+        width: 100%;
+        box-shadow:  inset 0 0 10px rgba(51, 51, 51, 0.267);
+        height: 2rem;
+    }
+    .progress1 {
+        background-color: pink;
+        height: 1%;
+        padding: 1rem;
+        position: absolute;
+        content: "";
+        width: 35%;
+        top: 9.3rem;
+        left: 3.5rem;
+    }
+
+    .progress2 {
+        background-color: pink;
+        height: 1%;
+        padding: 1rem;
+        position: absolute;
+        content: "";
+        width: 30%;
+        top: 9.3rem;
+        left: 3.5rem;
+    }
+
+    .progress3 {
+        background-color: pink;
+        height: 1%;
+        padding: 1rem;
+        position: absolute;
+        content: "";
+        width: 25%;
+        top: 9.3rem;
+        left: 3.5rem;
+    }
+
+    .progress4 {
+        background-color: pink;
+        height: 1%;
+        padding: 1rem;
+        position: absolute;
+        content: "";
+        width: 25%;
+        top: 9.3rem;
+        left: 3.5rem;
+    }
+
+/* Footer*/
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+  }
+  
+  footer p {
+      font-size: 00.8rem;
+      margin-top: 3rem;
+  }
+
+  /* Form */
+footer form .form-group{
+    margin: 2rem 0;
+}
+
+footer form .form-group label {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+}
+
+footer form .form-group input, footer form .form-group textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    font-size: 1rem;
+}
+
+footer form button {
+    background-color: pink;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: inherit;
+}
+
+@media (max-width: 1000px) {
+    main #experience {
+        display: block;
+        margin-left: 2rem;
+    }
+    main #experience img {
+        width: 100%;
+    }
+
+    main #skills .skills_boxes {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    main #skills .box {
+        width: 100%;
+        
+    }
+
+    main #skills .container {
+        height: 70rem;
+        padding-bottom: 2rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+    }
+    footer form {
+        width: 80%;
+        text-align: left;
+    }
+    footer form .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    footer form .form-group input, footer form .form-group textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        height: 120px;
+    }
+
+    header nav ul li a {
+        padding: 0.5rem;
+    }
+
+    main #hero-banner h1 {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    main #work .work_boxes {
+        flex-direction: column;
+    }
+
+    main #work .box {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    main #skills .skills_boxes {
+        flex-direction: column;
+    }
+
+    main #skills .box {
+        width: 100%;
+        margin: 1rem 0;
+        height: 100%;
+        overflow-x:hidden;
+    }
+
+    main #skills .container {
+        height: 70rem;
+        
+    }
+
+    main #work, main #skills {
+        padding: 0;
+    }
+
+    .container, main #experience .content {
+        padding: 1rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+    }
+}
