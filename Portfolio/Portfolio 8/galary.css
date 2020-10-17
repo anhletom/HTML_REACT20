@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+}
+
+header {
+    background-color: #333;
+    padding: 1.5rem;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo a {
+    color: pink;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* Main navigation */
+
+header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  header nav ul li a {
+    color: white;
+    padding: 0.5rem 0;
+    margin: 0 1rem;
+    display: block;
+    border-bottom: 3px double transparent;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    border-bottom: 3px double pink;
+  }
+
+  main{
+      margin: 7rem 3rem;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+  main .grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 1rem;
+  }
+
+  main .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    margin-top: 1rem;
+  }
+
+  main .grid3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+  }

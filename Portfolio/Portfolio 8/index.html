@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Anh REACT20 profolio" content="Showcase knowledge of CSS and HTML"/>
+    <meta name="author" content="Anh"/>
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <script src="https://kit.fontawesome.com/8f5b044333.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+    <title>Anh's profolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="#">MyWeb</a>
+      </div>
+      <nav>
+        <a onclick="mobileMenu()" href="#" class="icon">
+          <span class="material-icons">menu</span>
+      </a>
+        <ul>
+          <li><a href="#work">Work</a>
+            <ul>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#footer">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-banner">
+        <h1>Welcome to my <span>Profolio page</span></h1>
+      </section>
+      <section id="work">
+        <div class="container">
+          <h2>Work</h2>
+          <div class="work_boxes">
+              <div class="box">
+                <img
+                src="https://source.unsplash.com/1600x900/?groupwork"
+                alt="work"
+                />
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                 <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iusto
+                id vel, quod molestiae voluptatum ea eum! Aliquid maxime quaerat
+                </p>
+                <a href="#">See more</a>
+              </div>
+              <div class="box">
+                <img
+                src="https://source.unsplash.com/1600x900/?work,computer"
+                alt="work"
+                />
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                 <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iusto
+                id vel, quod molestiae voluptatum ea eum! Aliquid maxime quaerat
+                </p>
+                <a href="#">See more</a>
+              </div>
+              <div class="box">
+                <img
+                src="https://source.unsplash.com/1600x900/?work,smiles"
+                alt="work"
+                />
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                 <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iusto
+                id vel, quod molestiae voluptatum ea eum! Aliquid maxime quaerat
+                </p>
+                <a href="#">See more</a>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <img
+          src="https://source.unsplash.com/600x600/?coding,skills"
+          alt="experience"
+        />
+        <div class="content">
+          <h2>Experience</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+            totam libero, saepe a ad eveniet magni ex non quos numquam commodi
+            aliquam officia labore. Architecto hic qui ex molestiae, animi
+            temporibus.
+            
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+            totam libero, saepe a ad eveniet magni ex non quos numquam commodi
+            aliquam officia labore. Architecto hic qui ex molestiae, animi
+            temporibus.
+            
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+            totam libero, saepe a ad eveniet magni ex non quos numquam commodi
+            aliquam officia labore. Architecto hic qui ex molestiae, animi
+            temporibus.
+            
+          </p>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills_boxes">
+            <div class="box">
+              <div><i class="fab fa-html5 fa-2x"></i></div>
+              <p>HTML5</p>
+              <div class="level"></div>
+              <div class="progress1"></div>
+            </div>
+            <div class="box">
+              <div><i class="fab fa-css3-alt fa-2x"></i></div>
+              <p>CSS3</p>
+              <div class="level"></div>
+              <div class="progress2"></div>
+            </div>
+            <div class="box">
+              <div><i class="fab fa-js-square fa-2x"></i></div>
+              <p>JavaScript</p>
+              <div class="level">
+              </div>
+              <div class="progress3"></div>
+            </div>
+            <div class="box">
+              <div><i class="fas fa-database fa-2x"></i></div>
+              <p>SQL</p>
+              <div class="level">
+              </div>
+              <div class="progress4"></div>
+            </div>
+          </div>
+                
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+        <h3>Contact me</h3>
+        <form>
+            <div class="form-group">
+                <label for="your_name" name="your_name" id="your_name">Your name</label>
+            <input type="text" name="your_name" >
+            </div>
+            <div class="form-group">
+                <label for="your_email" id="your_email">Your email</label>
+                <input type="text">    
+            </div>
+            <div class="form-group">
+                <label>Message to me</label>
+                <textarea name="message" id="message" ></textarea> 
+                <div class="form-group">
+                    <button type="submit">Send message</button>
+                </div>
+            </div>
+        </form> 
+      <p>Copyright &copy; My Website 2020</p>
+      <div onclick="scrollCheck()" id="back-to-top">
+        <i class="material-icons">expand_less</i>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
